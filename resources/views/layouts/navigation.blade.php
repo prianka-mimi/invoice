@@ -25,13 +25,13 @@
                 </div>
 
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link :href="route('dashboard')">
+                    <x-nav-link :href="route('invoice.index')" :active="request()->routeIs('invoice.*')">
                         {{ __('Invoice List') }}
                     </x-nav-link>
                 </div>
 
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link :href="route('/')">
+                    <x-nav-link :href="route('/')" target="_blank">
                         {{ __('Live Website') }}
                     </x-nav-link>
                 </div>
